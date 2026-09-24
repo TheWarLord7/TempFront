@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>View local GeoJSON</title>
-    <meta property="og:description" content="View local GeoJSON without server upload." />
-    <meta property="og:category" content="Vector & GeoJSON" />
-    <meta property="og:created" content="2025-06-25" />
+    <title>ProJECT Preservation</title>
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='stylesheet' href='https://unpkg.com/maplibre-gl@6.11.1/dist/maplibre-gl.css' />
+    <link rel="stylesheet" href="index.css">
 
     <style>
         body { margin: 0; padding: 0; }
@@ -17,58 +15,26 @@
 </head>
 <body>
     <div id="overlay">
+        <div class="search">
+            <input type="text" placeholder="Search on ProJECT Preservation">
+
+            <div class="results">
+
+            </div>
+        </div>
         <div class="chatbot">
+
+            <div class="menu">
+                <div class="top">
+
+                </div>
+            </div>
+
             <button class="menubtn"><img src="assets/svg/Chat.svg" alt="">chatbot</button>
         </div>
     </div>
 
     <div id="map"></div>
 </body>
-<style>
-    @font-face {
-        font-family: NotoSans;
-        src: url(assets/fonts/NotoSans/NotoSans-VariableFont_wdth\,wght.ttf);
-    }
-
-    *, *::after, *::before {
-        font-family: NotoSans;
-    }
-
-    #overlay {
-        position: absolute;
-        z-index: 2;
-
-        bottom: 3rem;
-        right: 3rem;
-    }
-
-    #overlay .chatbot button.menubtn {
-        padding: .5rem 1rem;
-        border-radius: 12px;
-        outline: none;
-        border: none;
-
-        color: #fff;
-        text-transform: uppercase;
-        font-weight: 600;
-
-        display: flex;
-        align-items: center;
-        gap: .5rem;
-        
-        background-color: #c77904;
-
-        transition: background 150ms;
-    }
-
-    #overlay .chatbot button.menubtn:hover {
-        background-color: #a56403;
-    }
-
-    #overlay .chatbot button.menubtn:active {
-        background-color: #c77904;
-    }
-
-</style>
 <script src="index.js" type="module"></script>
-</html>
+</html> 
